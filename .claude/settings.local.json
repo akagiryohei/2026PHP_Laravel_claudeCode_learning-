@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(docker --version)",
+      "Bash(docker compose *)",
+      "Bash(lsb_release -a)",
+      "Bash(sudo apt-get update -qq)",
+      "Bash(sudo apt-get install -y ca-certificates curl gnupg)",
+      "Bash(php --version)",
+      "Bash(composer --version)",
+      "Bash(sudo -n apt-get update)",
+      "Bash(sudo -n true)",
+      "Bash(php artisan *)"
+    ]
+  }
+}
