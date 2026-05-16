@@ -11,20 +11,13 @@
 - [ ] タスクの共有（他ユーザーへの公開）
 - [ ] 認可（自分のタスクのみ編集・削除可能）
 
-## 学習ポイント
+## 実装チェックリスト
 
-### 検索・フィルター
-- `when()` を使った動的クエリ
-- GETパラメータの受け取りと活用
-
-### 認可（Authorization）
-- ポリシー（Policy）の作成（`php artisan make:policy`）
-- `authorize()` メソッドの使用
-- ゲート（Gate）との違い
-
-### クエリ最適化
-- Eager Loadingの活用
-- インデックスの考え方
+- [ ] 検索フォーム追加（`tasks/index.blade.php`）
+- [ ] `TaskController@index` に `when()` を使った動的クエリ実装
+- [ ] フィルター（カテゴリ・ステータス・優先度）実装
+- [ ] `TaskPolicy` 作成（`php artisan make:policy TaskPolicy --model=Task`）
+- [ ] `TaskController` の認可を `abort_if` から `authorize()` に置き換え
 
 ## ステータス
 

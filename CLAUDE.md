@@ -4,15 +4,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Doc参照ルール
 
-**回答・実装・提案を行う前に必ず `Doc/` を参照すること。**
+**回答・実装・提案を行う前に必ず `Doc/` を参照すること。まず `Doc/README.md` でどこに何があるかを確認する。**
 
 | ファイル | 用途 |
 |----------|------|
-| `Doc/context.md` | プロジェクトの経緯・目的・ユーザースキル感（最初に読む） |
+| `Doc/README.md` | ドキュメント全体のインデックス（構成を把握するために最初に読む） |
+| `Doc/context.md` | プロジェクトの経緯・目的・ユーザースキル感 |
 | `Doc/learning-plan/overview.md` | フェーズ全体の進捗・技術スタック |
-| `Doc/learning-plan/phase{1-4}.md` | 各フェーズの実装内容・学習ポイント・チェックリスト |
+| `Doc/learning-plan/phase{N}/checklist.md` | 各フェーズの実装内容・進捗チェックリスト |
+| `Doc/learning-plan/phase{N}/guide.md` | 各フェーズの学習解説・コード例（存在するフェーズのみ） |
 
-フェーズが進んだ際は該当の `phase{N}.md` のステータスとチェックリストを更新すること。
+フェーズが進んだ際は該当の `phase{N}/checklist.md` のステータスとチェックリストを更新すること。
 
 ## Project Overview
 
@@ -21,7 +23,7 @@ PHP/Laravel学習プロジェクト。タスク管理アプリを題材に、基
 
 ## Status
 
-Laravelプロジェクトは未作成。環境構築がまだのため、以下のコマンドは構築後に有効になる。
+Phase 2 完了。現在 Phase 3（リレーション）に着手中。
 
 ## Common Commands
 
@@ -79,7 +81,7 @@ database/
 | 3 | `phase/3-relations` | カテゴリ・期限・優先度 |
 | 4 | `phase/4-advanced` | 検索・認可・最適化 |
 
-各Phaseの詳細は `Doc/learning-plan/phase{1-4}.md` を参照。
+各Phaseの詳細は `Doc/learning-plan/phase{N}/checklist.md` を参照。
 
 ## User Context
 

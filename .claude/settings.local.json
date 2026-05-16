@@ -10,7 +10,9 @@
       "Bash(composer --version)",
       "Bash(sudo -n apt-get update)",
       "Bash(sudo -n true)",
-      "Bash(php artisan *)"
+      "Bash(php artisan *)",
+      "Bash(npx skills *)",
+      "Bash(npm run *)"
     ]
   }
 }
